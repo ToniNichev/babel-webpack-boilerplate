@@ -4,11 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf ./dist && webpack ./src/app.js -o ./dist/main-bundle.js"
+    "clean": "rm -rf ./dist",
+    "build-dev": "rm -rf ./dist && webpack --mode development ./src/app.js -o ./dist/main-bundle.js",
+    "build-prod": "rm -rf ./dist && webpack --mode production ./src/app.js -o ./dist/main-bundle.js"
   },
   "dependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
     "webpack": "^4.16.3"
   },
   "devDependencies": {
