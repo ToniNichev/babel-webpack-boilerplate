@@ -106,7 +106,7 @@ eval("\n\nvar _test = __webpack_require__(/*! ./test */ \"./src/test.js\");\n\nv
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nvar test = function test(msg) {\n    console.log(msg);\n    var arr = [1, 2, 3];\n    var iAmJavascriptES6 = function iAmJavascriptES6() {\n        var _console;\n\n        return (_console = console).log.apply(_console, arr);\n    };\n    window.iAmJavascriptES6 = iAmJavascriptES6;\n};\n\nexports.default = test;\n\n//# sourceURL=webpack:///./src/test.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n/* eslint-disable no-console */\nvar test = function test(msg) {\n  console.log(msg);\n  var arr = [1, 2, 3];\n  var iAmJavascriptES6 = function iAmJavascriptES6() {\n    var _console;\n\n    return (_console = console).log.apply(_console, arr);\n  };\n  window.iAmJavascriptES6 = iAmJavascriptES6;\n};\n\nexports.default = test;\n\n//# sourceURL=webpack:///./src/test.js?");
 
 /***/ })
 
